@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.font-balsa {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-60-px {
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+    .font-60-px {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .font-60-px {
+        font-size: 30px;
+    }
+    #parallax-height {
+        height: 700px;
+    }
+}

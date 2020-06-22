@@ -1,0 +1,11 @@
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: grey;
+}
+
+.flip__container .front h2{
+    font-size: 230% !important;
+}
