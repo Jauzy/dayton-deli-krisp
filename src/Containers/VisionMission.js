@@ -22,6 +22,7 @@ const VisionMission = (props) => {
                     </div>
                 </div>
             </div>
+            <div className='shape-wave-bottom'></div>
         </section>
     )
 }

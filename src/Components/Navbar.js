@@ -45,13 +45,13 @@ const Navbar = (props) => {
                         <div className='col-md d-flex'>
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#chipsSection">Chips</a>
-                                </li>
-                                <li className="nav-item">
                                     <a className="nav-link" href="#crackersSection">Kroepoek</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#gingerSection">Ginger</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#chipsSection">Chips</a>
                                 </li>
                             </ul>
                         </div>

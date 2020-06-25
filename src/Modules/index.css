@@ -26,3 +26,12 @@
         height: 700px;
     }
 }
+
+.shape-wave-bottom {
+    background-position-y: bottom;
+    margin-top: -180px;
+    margin-bottom: -2px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('./wave.svg');
+}

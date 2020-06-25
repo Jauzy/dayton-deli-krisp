@@ -3,9 +3,15 @@
 }
 
 .nav-link:hover {
-    color: grey;
+    color: white;
+    border-bottom: 3px solid white;
 }
 
 .flip__container .front h2{
     font-size: 230% !important;
+}
+
+.flip__container div:nth-child(1) {
+    background-blend-mode: normal;
+    background-color: white;
 }
