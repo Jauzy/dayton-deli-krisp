@@ -6,36 +6,39 @@ import '../../node_modules/react-flip-cards/build/index.css';
 var defaultSettings = {
     className: 'd-flex justify-content-center',
     autoplay: true,
-    dots: true,
     infinite: true,
     speed: 500,
     arrows:false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
         {
             breakpoint: 1500,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
         },
         {
             breakpoint: 1100,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
         },
         {
             breakpoint: 860,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         },
         {
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }
     ]
@@ -51,7 +54,7 @@ const ProductSlider = (props) => {
             <Slider {...settings}>
                 {props.products?.map((item, index) => (
                     <div className='px-3'>
-                        <div style={{ height: '400px' }}>
+                        <div style={{ height: '300px'}}>
                             <FlipCard img={item.img}
                                 backTitle={item.name}
                                 bgColor={props.backCardColor} // back card background color

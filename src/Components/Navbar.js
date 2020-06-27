@@ -7,6 +7,12 @@ const Navbar = (props) => {
             $('#navbarSupportedContent').removeClass('show')
         })
     }, [])
+    const scrollTo = (e) => {
+        $('html,body').animate({
+            scrollTop: $(e).offset().top
+        },
+            'slow');
+    }
     return (
         <div className='sticky-top font-roboto'>
 
@@ -27,13 +33,10 @@ const Navbar = (props) => {
                         <div className='col-md d-flex'>
                             <ul className="navbar-nav m-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#products">Products</a>
+                                    <a className="nav-link" href="#" onClick={() => scrollTo("#products")}>Products</a>
                                 </li>
                                 <li className="nav-item mx-auto">
-                                    <a className="nav-link" href="#vision-mission">Mission</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#vision-mission">Vision</a>
+                                    <a className="nav-link" href="#" onClick={() => scrollTo("#vision-mission")}>Vision & Mission</a>
                                 </li>
                             </ul>
                         </div>
@@ -45,13 +48,13 @@ const Navbar = (props) => {
                         <div className='col-md d-flex'>
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#crackersSection">Kroepoek</a>
+                                    <a className="nav-link" href="#" onClick={() => scrollTo("#crackersSection")}>Kroepoek</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#gingerSection">Ginger</a>
+                                    <a className="nav-link" href="#" onClick={() => scrollTo("#gingerSection")}>Ginger</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#chipsSection">Chips</a>
+                                    <a className="nav-link" href="#" onClick={() => scrollTo("#chipsSection")}>Chips</a>
                                 </li>
                             </ul>
                         </div>

@@ -9,7 +9,7 @@ const Footer = (props) => {
                 <div className="px-10">
                     <div className="px-5 py-5">
                         <div className="row">
-                            <div className="col-md-7">
+                            <div className="col-md-6">
                                 <h6 className="font-weight-bolder text-white mb-2 mt-3 font-roboto">About Us</h6>
                                 <h4 className="font-weight-bolder">Dytona Deli Krisp</h4>
                                 <p className="text-break">
@@ -32,8 +32,8 @@ const Footer = (props) => {
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#crackersSection'>Kroepoek</a></li>
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#gingerSection'>Ginger Powder Drink</a></li>
                                 </ul>
-                                <div className='mt-auto btn btn-light my-2'>
-                                    <i className='fa fa-envelope' /> dytonadelikrisp@yahoo.co.id
+                                <div className='mt-auto btn btn-light my-2 text-wrap'>
+                                    <i className='fa fa-envelope' /> dytonadelikrisp@ yahoo.co.id
                                 </div>
                             </div>
                         </div>

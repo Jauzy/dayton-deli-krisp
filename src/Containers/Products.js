@@ -3,6 +3,7 @@ import anime from 'animejs/lib/anime.es.js';
 import { ProductSlider } from '../Components/Index'
 import $ from 'jquery'
 import { Parallax } from 'react-parallax'
+import Slider from 'react-slick'
 
 const chips = './images/Chips/'
 const crackers = './images/Crackers/'
@@ -132,11 +133,11 @@ const Products = (props) => {
             img: ginger + '5GCS.JPG',
             desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Clove Ginger Powder Drink. We also provide clove and the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
         },
-        {
-            name: 'Ginger Original with Carton Box',
-            img: ginger + '6GOCB.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Original Ginger With a Carton Box. There are 10 sachets of original ginger, in every box.',
-        },
+        // {
+        //     name: 'Ginger Original with Carton Box',
+        //     img: ginger + '6GOCB.JPG',
+        //     desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Original Ginger With a Carton Box. There are 10 sachets of original ginger, in every box.',
+        // },
         {
             name: 'Ginger Extra Hot with Carton Box',
             img: ginger + '7GEHCB.JPG',
@@ -194,6 +195,32 @@ const Products = (props) => {
         setState({ ...state, toggleGinger: true })
     }
 
+    var defaultSettings = {
+        className: 'd-flex justify-content-center',
+        autoplay: false,
+        infinite: true,
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    };
+
     return (
         <div className=''>
 
@@ -201,13 +228,35 @@ const Products = (props) => {
                 <div className="container">
                     <hr />
                     <h1 className='text-center' style={{ fontSize: '80px' }}>Our products</h1>
-                    <h5 className='text-center mx-auto text-secondary pb-3' style={{ maxWidth: '600px' }}>
+                    <h5 className='text-center mx-auto text-secondary pb-3' style={{ maxWidth: '400px' }}>
                         We are striving to develop to become a companion with our customer.
                     </h5>
                     <hr />
                     <hr style={{ border: '2px solid #FFD92A', transform: 'rotate(90deg)', width: '60px' }} className='mt-5' />
                 </div>
             </section>
+
+            <div style={{ width: '100%' }}>
+                <div className='bg-light align-items-center pb-5 slider-parent'>
+                    <Slider {...defaultSettings}>
+                        {gingersProducts.map((item, index) => (
+                            <div className='px-3'>
+                                <div className='slider-class d-flex justify-content-center align-items-center'>
+                                    <div className='img-class p-5 d-flex flex-column'>
+                                        <img src={item.img} width='100%' className='m-auto' />
+                                        <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right:'10px', top:'10px'}} className='position-absolute logo' />
+                                    </div>
+                                    <div className=''>
+                                        <div className='text-div'>
+                                            <h1 className=''>{item.name}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
 
             {/* Crackers */}
             <section id='crackersSection' className='bg-lght' style={{ backgroundColor: '#F8F9FA' }}>
@@ -226,7 +275,7 @@ const Products = (props) => {
                                                 <span>Learn More</span>
                                             </div>
                                         </figure>}
-                                        <p hidden={!state.toggleCrackers} id='toggleCrackers' className='text-white font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0 }}>
+                                        <p hidden={!state.toggleCrackers} id='toggleCrackers' className='font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0, color: '#A9855B' }}>
                                             Kroepoek in The Netherlands is a popular snack in part of East And Southeast Asia. Krupuk are deep fried crackers made from starch and other ingredients that usually give the taste.
                                     </p>
                                     </div>
@@ -245,7 +294,7 @@ const Products = (props) => {
                 </Parallax>
             </section>
 
-            <div className='bg-light py-5'>
+            <div className='bg-light p-5'>
                 <div className='container text-center'>
                     <hr />
                     <h1>
@@ -276,7 +325,7 @@ const Products = (props) => {
                                                 <span>Learn More</span>
                                             </div>
                                         </figure>}
-                                        <p hidden={!state.toggleGinger} id='toggleGinger' className='text-white font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0 }}>
+                                        <p hidden={!state.toggleGinger} id='toggleGinger' className='font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0, color: '#A9855B' }}>
                                             Is an Indonesia traditional beverage made from Fresh Java Ginger and all natural ingredients without any preservatives, coloring, and additives it only brings the good nature of the infamous ginger ingredient in a modern and convenient way as your drink.
                                     </p>
                                     </div>
@@ -292,7 +341,7 @@ const Products = (props) => {
                 </Parallax>
             </section>
 
-            <div className='bg-light py-5'>
+            <div className='bg-light p-5'>
                 <div className='container text-center'>
                     <hr />
                     <h1>
@@ -323,7 +372,7 @@ const Products = (props) => {
                                                 <span>Learn More</span>
                                             </div>
                                         </figure>}
-                                        <p hidden={!state.toggleChips} id='toggleChips' className='text-dark font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0 }}>
+                                        <p hidden={!state.toggleChips} id='toggleChips' className='font-balsa mt-3' style={{ textIndent: '20px', textAlign: 'justify', textJustify: 'inter-word', opacity: 0, color: '#A9855B' }}>
                                             Our Chips are made from fresh roots, fresh cassava and sweet banana with added natural flavouring and ingredients, that has a rich source of protein, carbohydrates, fiber and iron. The rich and diverse flavour of our chips crackers makes it an ideal snack food favorite of classes A to E market.
                                     </p>
                                     </div>

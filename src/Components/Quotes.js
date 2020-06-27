@@ -2,7 +2,7 @@ import React from 'react'
 
 const Quotes = (props) => {
     return (
-        <div className='bg-light py-5'>
+        <div className='bg-light p-5'>
             <div className='container text-center'>
                 <hr/>
                 <h1>
