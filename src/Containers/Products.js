@@ -237,24 +237,27 @@ const Products = (props) => {
             </section>
 
             <div style={{ width: '100%' }}>
+                <h1 className='text-center bg-light'>PREVIEW SLIDER</h1>
                 <div className='bg-light align-items-center pb-5 slider-parent'>
-                    <Slider {...defaultSettings}>
-                        {gingersProducts.map((item, index) => (
-                            <div className='px-3'>
-                                <div className='slider-class d-flex justify-content-center align-items-center'>
-                                    <div className='img-class p-5 d-flex flex-column'>
-                                        <img src={item.img} width='100%' className='m-auto' />
-                                        <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right:'10px', top:'10px'}} className='position-absolute logo' />
-                                    </div>
-                                    <div className=''>
-                                        <div className='text-div'>
-                                            <h1 className=''>{item.name}</h1>
+                    <div className="slider-child">
+                        <Slider {...defaultSettings}>
+                            {gingersProducts.map((item, index) => (
+                                <div className='px-3'>
+                                    <div className='slider-class d-flex justify-content-center align-items-center'>
+                                        <div className='img-class p-5 d-flex flex-column'>
+                                            <img src={item.img} width='100%' className='m-auto' />
+                                            <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right:'70px', top:'70px'}} className='position-absolute logo' />
+                                        </div>
+                                        <div className=''>
+                                            <div className='text-div'>
+                                                <h1 className=''>{item.name}</h1>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
 
