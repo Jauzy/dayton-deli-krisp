@@ -24,6 +24,9 @@ const Footer = (props) => {
                                 <div className='mt-auto btn btn-light my-2'>
                                     <i className='fa fa-phone' /> (+62) 251 8618 620
                                 </div>
+                                <a className='mt-auto btn btn-light my-2' href='https://api.whatsapp.com/send?phone=081283275271'>
+                                    <i className='fab fa-whatsapp' /> 0812 83275271
+                                </a>
                             </div>
                             <div className="col-md d-flex flex-column">
                                 <h6 className="font-weight-bolder text-white mb-2 mt-3 font-roboto">Our Products</h6>
@@ -32,9 +35,9 @@ const Footer = (props) => {
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#crackersSection'>Kroepoek</a></li>
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#gingerSection'>Ginger Powder Drink</a></li>
                                 </ul>
-                                <div className='mt-auto btn btn-light my-2 text-wrap'>
+                                <a className='mt-auto btn btn-light my-2 text-wrap' href='mailto:dytonadelikrisp@ yahoo.co.id'>
                                     <i className='fa fa-envelope' /> dytonadelikrisp@ yahoo.co.id
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

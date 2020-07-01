@@ -3,44 +3,54 @@ import Slider from 'react-slick'
 import FlipCard from "react-flip-cards";
 import '../../node_modules/react-flip-cards/build/index.css';
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "black", borderRadius: '50%', marginRight: '30%' }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "green" }}
+            onClick={onClick}
+        />
+    );
+}
+
 var defaultSettings = {
     className: 'd-flex justify-content-center',
     autoplay: true,
     infinite: true,
-    speed: 500,
-    arrows:false,
-    slidesToShow: 4,
-    slidesToScroll: 3,
+    arrows: true,
+    dots: true,
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
         {
-            breakpoint: 1500,
+            breakpoint: 1300,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
             }
         },
         {
             breakpoint: 1100,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                arrows: false,
+                slidesToShow: 1,
             }
         },
-        {
-            breakpoint: 860,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
     ]
 };
 
@@ -50,21 +60,28 @@ const ProductSlider = (props) => {
     useEffect(() => {
     }, [])
     return (
-        <div>
-            <Slider {...settings}>
-                {props.products?.map((item, index) => (
-                    <div className='px-3'>
-                        <div style={{ height: '300px'}}>
-                            <FlipCard img={item.img}
-                                backTitle={item.name}
-                                bgColor={props.backCardColor} // back card background color
-                            />
-                        </div>
-                    </div>
-                ))}
-            </Slider>
-            <hr style={{borderBottom:'2px solid #C8A786'}} className='mt-5'/>
-            <hr style={{ border: '1px solid #FFD92A', transform: 'rotate(90deg)', width: '60px'}} className='mt-5 mb-3' />
+        <div style={{ width: '100%' }}>
+            <div className='align-items-center pb-5 slider-parent'>
+                <div className="slider-child">
+                    <Slider {...defaultSettings}>
+                        {props.products.map((item, index) => (
+                            <div className='px-3'>
+                                <div className='slider-class d-flex justify-content-center align-items-center'>
+                                    <div className='img-class p-5 d-flex flex-column'>
+                                        <img src={item.img} className='m-auto img-height' />
+                                        <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right: '70px', top: '70px' }} className='position-absolute logo' />
+                                    </div>
+                                    <div className=''>
+                                        <div className='text-div'>
+                                            <h1 className=''>{item.name}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
         </div>
     )
 }

@@ -199,7 +199,7 @@ const Products = (props) => {
         className: 'd-flex justify-content-center',
         autoplay: false,
         infinite: true,
-        arrows: false,
+        arrows: true,
         dots: true,
         centerMode: true,
         slidesToShow: 3,
@@ -236,31 +236,6 @@ const Products = (props) => {
                 </div>
             </section>
 
-            <div style={{ width: '100%' }}>
-                <h1 className='text-center bg-light'>PREVIEW SLIDER</h1>
-                <div className='bg-light align-items-center pb-5 slider-parent'>
-                    <div className="slider-child">
-                        <Slider {...defaultSettings}>
-                            {gingersProducts.map((item, index) => (
-                                <div className='px-3'>
-                                    <div className='slider-class d-flex justify-content-center align-items-center'>
-                                        <div className='img-class p-5 d-flex flex-column'>
-                                            <img src={item.img} width='100%' className='m-auto' />
-                                            <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right:'70px', top:'70px'}} className='position-absolute logo' />
-                                        </div>
-                                        <div className=''>
-                                            <div className='text-div'>
-                                                <h1 className=''>{item.name}</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </Slider>
-                    </div>
-                </div>
-            </div>
-
             {/* Crackers */}
             <section id='crackersSection' className='bg-lght' style={{ backgroundColor: '#F8F9FA' }}>
                 <Parallax bgImage={require('./images/blob-right.svg')} blur={{ min: -15, max: 15 }} strength={400} className='parallax-header'>
@@ -289,8 +264,8 @@ const Products = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid'>
-                        <div className='p-5'>
+                    <div className=''>
+                        <div className=''>
                             <ProductSlider products={crackersProducts} backCardColor='#A9855B' />
                         </div>
                     </div>
@@ -336,8 +311,8 @@ const Products = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid'>
-                        <div className='p-5'>
+                    <div className=''>
+                        <div className=''>
                             <ProductSlider products={gingersProducts} backCardColor="#259DBF" />
                         </div>
                     </div>
@@ -383,8 +358,8 @@ const Products = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid'>
-                        <div className='p-5'>
+                    <div className=''>
+                        <div className=''>
                             <ProductSlider products={chipsProducts} backCardColor="#DFAC6E" />
                         </div>
                     </div>

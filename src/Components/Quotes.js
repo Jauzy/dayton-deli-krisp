@@ -9,7 +9,7 @@ const Quotes = (props) => {
                     "The Species The Ingredients That Were Used by Our Folks, Will be Able to Gratify the World's Needs for those Authentic Tropical Taste and Experiences"
                 </h1>
                 <div className='d-flex mt-4'>
-                    <div className='mx-auto px-5 py-3 text-white rounded-lg btn btn-dark'>PT. DYTONA DELI KRISP</div>
+                    <a className='mx-auto px-5 py-3 text-white rounded-lg btn btn-dark' href='#products'>PT. DYTONA DELI KRISP</a>
                 </div>
                 <hr/>
                 <hr style={{ border: '2px solid #FFD92A', transform: 'rotate(90deg)', width: '60px' }} className='mt-5' />

@@ -28,7 +28,7 @@
 }
 
 .text-div {
-    color: #F8F9FA;
+    color: transparent;
     z-index: 0;
     width: 200px;
 }
@@ -46,11 +46,21 @@
     border: 7px solid lightgray;
 }
 
+.img-height {
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .img-height {
+        height: 100px;
+    }
+}
+
 .slick-current .logo {
     opacity: 0;
     animation-name: logo-ani;
     animation-delay: 2s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
     animation-duration: 2s;
 }
 
@@ -58,7 +68,7 @@
     margin-left: 0;
     animation-name: current-text;
     z-index: 1;
-    color: black;
+    color: #A9855B;
     animation-duration: 2s;
 }
 
@@ -134,14 +144,27 @@
     }
     .text-div h1 {
         font-size: 1em;
-        
+        width: 100px;
     }
     .logo {
         width: 10%;
     }
-
     .slick-current {
         border: none;
     }
+    .slick-current .text-div {
+        margin-left: -50px;
+        animation-name: current-text;
+        z-index: 1;
+        color: #A9855B;
+        animation-duration: 2s;
+    }
+    @keyframes current-text {
+        from {
+            margin-left: -200px;
+        }
+        to {
+            margin-left: -50px;
+        }
+    }
 }
-
