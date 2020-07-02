@@ -1,0 +1,46 @@
+.hscroll-line {
+    bottom: 30px;
+    height: 3px;
+    position: absolute;
+    overflow: hidden;
+    width: 60px;
+    transform: rotate(90deg);
+}
+
+.hscroll-line::before, .hscroll-line::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ""
+}
+
+.hscroll-line:before {
+    background: #ffffff3b;
+}
+
+.hscroll-line::after {
+    background: #FFD92A;
+    animation: move 3s infinite
+}
+
+@keyframes move {
+    0% {
+        transform: translate3d(-200%, 0, 0)
+    }
+    60% {
+        transform: translate3d(100%, 0, 0)
+    }
+    100% {
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    position: relative;
+    padding: 0
+}

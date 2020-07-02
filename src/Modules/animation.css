@@ -1,0 +1,16 @@
+.parallax-header {
+    animation: parallax 1.5s 1;
+}
+
+.parallax-header .react-parallax-bgimage {
+}
+
+@keyframes parallax {
+    0% {
+        /* transform: scale(1.2); */
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+.px-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media only screen and (max-width: 1600px) {
+    .px-10 {
+        padding-left:5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .px-10 {
+        padding-left:2%;
+        padding-right: 2%;
+    }
+}
+
+#parallax-height {
+    height: 1000px;
+}
+
+@media only screen and (max-width: 500px) {
+    #parallax-height {
+        height: 700px;
+    }
+}
+
+.shape-wave-bottom {
+    background-position-y: bottom;
+    margin-top: -180px;
+    margin-bottom: -2px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('./wave.svg');
+}

@@ -1,0 +1,170 @@
+.nav-link {
+    color: white;
+    border-bottom: 3px solid black;
+}
+
+.nav-link:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.flip__container .back h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 230% !important;
+}
+
+.flip__container div:nth-child(1) {
+    background-blend-mode: normal;
+    background-color: white;
+}
+
+.img-class {
+    border-radius: 20px;
+    transform: scale(0.5);
+}
+
+.img-class img {
+    border-radius: 20px;
+}
+
+.text-div {
+    color: transparent;
+    z-index: 0;
+    width: 200px;
+}
+
+.text-div h1 {
+    font-size: 2em;
+}
+
+.slider-class .logo {
+    opacity: 0;
+}
+
+.slick-current {
+    border-radius: 20px;
+    border: 7px solid lightgray;
+}
+
+.img-height {
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .img-height {
+        height: 100px;
+    }
+}
+
+.slick-current .logo {
+    opacity: 0;
+    animation-name: logo-ani;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.slick-current .text-div {
+    margin-left: 0;
+    animation-name: current-text;
+    z-index: 1;
+    color: #A9855B;
+    animation-duration: 2s;
+}
+
+.slick-current .img-class {
+    animation-name: current-img;
+    animation-duration: 2s;
+    transform: scale(1);
+}
+
+@keyframes current-img {
+    from {
+        transform: scale(0.5)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes current-text {
+    from {
+        margin-left: -500px;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes logo-ani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slick-slide {
+    width: 100%;
+}
+
+.slick-slide div:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    margin: auto;
+}
+
+.slider-parent {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.slider-child {
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .slider-child {
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+    .text-div {
+        padding: 0 20px;
+        width: 50%;
+    }
+    .text-div h1 {
+        font-size: 1em;
+        width: 100px;
+    }
+    .logo {
+        width: 10%;
+    }
+    .slick-current {
+        border: none;
+    }
+    .slick-current .text-div {
+        margin-left: -50px;
+        animation-name: current-text;
+        z-index: 1;
+        color: #A9855B;
+        animation-duration: 2s;
+    }
+    @keyframes current-text {
+        from {
+            margin-left: -200px;
+        }
+        to {
+            margin-left: -50px;
+        }
+    }
+}
