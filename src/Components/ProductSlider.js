@@ -7,8 +7,8 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
-            className={className}
-            style={{ ...style, display: "block", background: "black", borderRadius: '50%', marginRight: '30%' }}
+            className={className + ' custom-arrow'}
+            style={{ ...style }}
             onClick={onClick}
         />
     );
@@ -18,8 +18,8 @@ function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
-            className={className}
-            style={{ ...style, display: "block", background: "green" }}
+            className={className + ' custom-arrow-prev'}
+            style={{ ...style }}
             onClick={onClick}
         />
     );
@@ -29,6 +29,7 @@ var defaultSettings = {
     className: 'd-flex justify-content-center',
     autoplay: true,
     infinite: true,
+    focusOnSelect: true,
     arrows: true,
     dots: true,
     centerMode: true,
@@ -69,7 +70,7 @@ const ProductSlider = (props) => {
                                 <div className='slider-class d-flex justify-content-center align-items-center'>
                                     <div className='img-class p-5 d-flex flex-column'>
                                         <img src={item.img} className='m-auto img-height' />
-                                        <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right: '70px', top: '70px' }} className='position-absolute logo' />
+                                        {/* <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right: '70px', top: '70px' }} className='position-absolute logo' /> */}
                                     </div>
                                     <div className=''>
                                         <div className='text-div'>

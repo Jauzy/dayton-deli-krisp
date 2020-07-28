@@ -6,7 +6,7 @@ const Quotes = (props) => {
             <div className='container text-center'>
                 <hr/>
                 <h1>
-                    "The Species The Ingredients That Were Used by Our Folks, Will be Able to Gratify the World's Needs for those Authentic Tropical Taste and Experiences"
+                    "The Spices The Ingredients That Were Used by Our Folks, Will be Able to Gratify the World's Needs for those Authentic Tropical Taste and Experiences"
                 </h1>
                 <div className='d-flex mt-4'>
                     <a className='mx-auto px-5 py-3 text-white rounded-lg btn btn-dark' href='#products'>PT. DYTONA DELI KRISP</a>
