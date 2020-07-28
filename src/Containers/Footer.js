@@ -13,7 +13,7 @@ const Footer = (props) => {
                                 <h6 className="font-weight-bolder text-white mb-2 mt-3 font-roboto">About Us</h6>
                                 <h4 className="font-weight-bolder">Dytona Deli Krisp</h4>
                                 <p className="text-break">
-                                    Established in 2015, PT DYTONA DELI KRISP is the Indonesia Authentic Crackers manufacturing company in Indonesia and has distributed in Indonesia and around the world. Based on these foundations, the company has introduced variety of famous Indonesian Authentic Crackers product.
+                                    Established in 2015, PT DYTONA DELI KRISP is the Indonesia's Authentic Crackers manufacturing company in Indonesia and has distributed in Indonesia and around the world. Based on these foundations, the company has introduced variety of famous Indonesian Authentic Crackers product.
                                     In 2018 our company decided to provide Powder Drink manufacturing particularly, the ready to serve and ready to drink.
                                 </p>
                             </div>
@@ -21,10 +21,10 @@ const Footer = (props) => {
                                 <h6 className="font-weight-bolder text-white mb-2 mt-3 font-roboto">Address</h6>
                                 <p>PT DYTONA DELI KRISP Jln. Mutiara III No 3, Rt.01 Rw.02, Kelurahan Curug, Kecamatan Gunung Sindur, Kabupaten Bogor, Provinsi Jawa Barat, Indonesia, 16340.</p>
 
-                                <div className='mt-auto btn btn-light my-2'>
+                                <a className='mt-auto btn btn-light my-2' href="tel:+62-251-8618-620">
                                     <i className='fa fa-phone' /> (+62) 251 8618 620
-                                </div>
-                                <a className='mt-auto btn btn-light my-2' href='https://api.whatsapp.com/send?phone=081283275271'>
+                                </a>
+                                <a className='mt-auto btn btn-light my-2' href='https://api.whatsapp.com/send?phone=6281283275271'>
                                     <i className='fab fa-whatsapp' /> 0812 83275271
                                 </a>
                             </div>

@@ -109,7 +109,7 @@ const Products = (props) => {
 
     const gingersProducts = [
         {
-            name: 'Habba tusauda Powder Drink',
+            name: 'Habbatusauda Powder Drink',
             img: ginger + '1HPD.JPG',
             desc: 'In collaboration with PT. Pendekar Dua Nama, we present Habbatussauda Ginger Instant Powder Drink. With the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
         },
@@ -229,7 +229,7 @@ const Products = (props) => {
                     <hr />
                     <h1 className='text-center' style={{ fontSize: '80px' }}>Our products</h1>
                     <h5 className='text-center mx-auto text-secondary pb-3' style={{ maxWidth: '400px' }}>
-                        We are striving to develop to become a companion with our customer.
+                        We are striving to develop a companion spirit with our customer.
                     </h5>
                     <hr />
                     <hr style={{ border: '2px solid #FFD92A', transform: 'rotate(90deg)', width: '60px' }} className='mt-5' />
