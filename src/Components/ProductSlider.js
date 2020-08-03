@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Slider from 'react-slick'
-import FlipCard from "react-flip-cards";
-import '../../node_modules/react-flip-cards/build/index.css';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -56,21 +54,23 @@ var defaultSettings = {
 };
 
 const ProductSlider = (props) => {
+    let products = []
+    props.products.map(item => {
+        if (props.category === item.node.frontmatter.category) {
+            products.push({ name: item.node.frontmatter.name, img: item.node.frontmatter.image.childImageSharp.fluid.src })
+        }
+    })
 
-    const settings = props.settings ? props.settings : defaultSettings
-    useEffect(() => {
-    }, [])
     return (
         <div style={{ width: '100%' }}>
             <div className='align-items-center pb-5 slider-parent'>
                 <div className="slider-child">
                     <Slider {...defaultSettings}>
-                        {props.products.map((item, index) => (
-                            <div className='px-3'>
+                        {products.map((item, index) => (
+                            <div key={index} className='px-3'>
                                 <div className='slider-class d-flex justify-content-center align-items-center'>
                                     <div className='img-class p-5 d-flex flex-column'>
                                         <img src={item.img} className='m-auto img-height' />
-                                        {/* <img src='./images/dk_icon.jpg' width='80px' style={{ borderRadius: '50%', right: '70px', top: '70px' }} className='position-absolute logo' /> */}
                                     </div>
                                     <div className=''>
                                         <div className='text-div'>

@@ -67,22 +67,22 @@ const Navbar = (props) => {
                     </div>
 
                     {/* Hamburger */}
-                    <div class="collapse" id="navbarSupportedContent" style={{ width: '100%' }}>
-                        <ul class="navbar-nav">
-                            <li class="nav-item d-flex align-items-center text-white">
-                                <i className='fa fa-boxes mr-2' /><a class="nav-link" href="#products">Our Products</a>
+                    <div className="collapse" id="navbarSupportedContent" style={{ width: '100%' }}>
+                        <ul className="navbar-nav">
+                            <li className="nav-item d-flex align-items-center text-white">
+                                <i className='fa fa-boxes mr-2' /><a className="nav-link" href="#products">Our Products</a>
                             </li>
-                            <li class="nav-item d-flex align-items-center text-white">
-                                <i className='fa fa-building mr-2' /><a class="nav-link" href="#vision-mission">Mission & Vision</a>
+                            <li className="nav-item d-flex align-items-center text-white">
+                                <i className='fa fa-building mr-2' /><a className="nav-link" href="#vision-mission">Mission & Vision</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#chipsSection">Products: Chips</a>
+                            <li className="nav-item ">
+                                <a className="nav-link" href="#chipsSection">Products: Chips</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#crackersSection">Products: Kroepoek</a>
+                            <li className="nav-item ">
+                                <a className="nav-link" href="#crackersSection">Products: Kroepoek</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#gingerSection">Products: Ginger Powder Drink</a>
+                            <li className="nav-item ">
+                                <a className="nav-link" href="#gingerSection">Products: Ginger Powder Drink</a>
                             </li>
                             <li className='nav-item'>
                                 <a className='nav-link' href='#' data-toggle="modal" data-target="#legalModal">
@@ -94,16 +94,16 @@ const Navbar = (props) => {
                 </nav>
             </div >
 
-            <div class="modal fade" id="legalModal" tabindex="-1" role="dialog" aria-labelledby="legalmodal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="">Our Legal Certificate</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="legalModal" tabIndex="-1" role="dialog" aria-labelledby="legalmodal" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="">Our Legal Certificate</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <div aria-hidden="true">&times;</div>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <div className='row p-5'>
                                 <div className='col-md-4 d-flex'>
                                     <div className='m-auto'>

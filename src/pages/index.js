@@ -1,7 +1,13 @@
 import React from "react"
 
-import { Navbar, Parallax, Quotes } from '../Components/Index'
-import { Products, Footer, VisionMission } from '../Containers/Index'
+import { 
+  Navbar, 
+  Parallax, 
+  Quotes, 
+  Products, 
+  Footer, 
+  VisionMission 
+} from '../Components/Index'
 
 export default function Home() {
   return (

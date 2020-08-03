@@ -33,7 +33,7 @@ const ReactParallax = (props) => {
                                 "We share the cultural value of Indonesia to the world through the native product."
                             </h1>
                             <div className='d-flex justify-content-center'>
-                                <div class="hscroll-line" style={{ top: '500px' }}></div>
+                                <div className="hscroll-line" style={{ top: '500px' }}></div>
                             </div>
                         </div>
                     </div>
