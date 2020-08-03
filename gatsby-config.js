@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    netlifyCmsPaths,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -32,7 +33,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 930,
+              maxWidth: 500,
               backgroundColor: 'transparent', // required to display blurred image first
             },
           },

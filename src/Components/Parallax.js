@@ -25,7 +25,7 @@ const ReactParallax = (props) => {
     }, [])
     return (
         <div>
-            <Parallax bgImage='./images/Crackers/3TS.JPG' blur={{ min: -15, max: 15 }} strength={500} className='parallax-header'>
+            <Parallax bgImage='./images/3TS.JPG' blur={{ min: -15, max: 15 }} strength={500} className='parallax-header'>
                 <div id='parallax-height'>
                     <div id='parallax-header' style={insideStyles} className='text-white text-center'>
                         <div className='container'>

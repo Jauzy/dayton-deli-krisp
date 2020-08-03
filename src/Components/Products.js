@@ -4,10 +4,6 @@ import { ProductSlider } from './Index'
 import { Parallax } from 'react-parallax'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const chips = './images/Chips/'
-const crackers = './images/Crackers/'
-const ginger = './images/Ginger/'
-
 const Products = () => {
     const data = useStaticQuery(graphql`
     query {
@@ -37,155 +33,6 @@ const Products = () => {
         toggleCrackers: false,
         toggleGinger: false
     })
-
-    const chipsProducts = [
-        {
-            name: 'Garlic Crackers',
-            img: chips + '1GC.JPG',
-            desc: 'The basic ingredients of crackers, that we dusting with garlic seasoning. We would like to present Garlic Crackers.'
-        },
-        {
-            name: 'Sweet Banana Chips',
-            img: chips + '2SBC.JPG',
-            desc: 'Banana with the best quality and natural sugar. By using natural ingredients without using artificial sweeteners, food coloring, and preservatives. We would like to present Sweet Banana Chips.'
-        },
-        {
-            name: 'Salty Banana Chips',
-            img: chips + '3SBC.JPG',
-            desc: 'Banana with the best quality and natural salt. By using natural ingredients without using artificial sweeteners, food coloring, and preservatives. We would like to present Salty Banana Chips.'
-        },
-        {
-            name: 'Banana Cheese',
-            img: chips + '4BC.JPG',
-            desc: 'Banana with the best quality and premium cheese seasoning. We would like to present Banana Cheese.'
-        },
-        {
-            name: 'Cassava Chips Original',
-            img: chips + '5CCO.JPG',
-            desc: 'We use selected cassava, then we dusting with a premium original seasoning. We would like to present Cassava Chips Original.'
-        },
-        {
-            name: 'Cassava Chips Sea Salt',
-            img: chips + '6CCSS.JPG',
-            desc: 'We use selected cassava, then we dusting with a premium sea salt seasoning. We would like to present Cassava Chips Sea Salt.'
-        },
-        {
-            name: 'Cassava Chips BBQ',
-            img: chips + '7CCB.JPG',
-            desc: 'We use selected cassava, then we dusting with a premium bbq seasoning. We would like to present Cassava Chips BBQ.'
-        },
-        {
-            name: 'Cassava Chips Hot & Spicy',
-            img: chips + '8CCHS.JPG',
-            desc: 'We use selected cassava, then we dusting with a premium hot & spicy seasoning. We would like to present Cassava Chips Hot & Spicy.'
-        },
-        {
-            name: 'Cassava Chips Balado',
-            img: chips + '9CCB.JPG',
-            desc: 'We use selected cassava, then we dusting with a premium balado seasoning. We would like to present Cassava Chips Balado.'
-        },
-    ]
-
-    const crackersProducts = [
-        {
-            name: 'Tonk\'y PPT',
-            img: crackers + '1TP.JPG',
-            desc: 'Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives.'
-        },
-        {
-            name: 'Tonk\'y Fish',
-            img: crackers + '2TF.JPG',
-            desc: 'Our crackers that we use with the best quallity of fish, with natural ingredients, without using artificial sweeteners, food coloring, and preservatives.'
-        },
-        {
-            name: 'Tonk\'y Shrimp',
-            img: crackers + '3TS.JPG',
-            desc: 'Our crackers are processed with natural ingredients and the best quality product, without using artificial sweeteners, food coloring, and preservatives. Our crackers has a smooth texture.'
-        },
-        {
-            name: 'Tonk\'y OGC',
-            img: crackers + '4TO.JPG',
-            desc: 'Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives. Tonk\'y OGC has a round shape with a hole in the middle.'
-        },
-        {
-            name: 'Tonk\'y OGS',
-            img: crackers + '5TO.JPG',
-            desc: 'Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives. Tonk\'y OGS has a square shape with a hole in the middle.'
-        },
-        {
-            name: 'Tonk\'y BWG',
-            img: crackers + '6TB.JPG',
-            desc: 'Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives. Tonk\'y BWG has a white color and smooth texture.'
-        },
-        {
-            name: 'Papatonk Shrimp Crackers',
-            img: crackers + '7PSC.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Papatonk Shrimp Crackers. Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives.'
-        },
-        {
-            name: 'Papatonk Fish Crackers',
-            img: crackers + '8PFC.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest Indonesia, Pesona Papatonk Indonesia), we present Papatonk Fish Crackers. Our crackers are processed with natural ingredients without using artificial sweeteners, food coloring, and preservatives.'
-        },
-    ]
-
-    const gingersProducts = [
-        {
-            name: 'Habbatusauda Powder Drink',
-            img: ginger + '1HPD.JPG',
-            desc: 'In collaboration with PT. Pendekar Dua Nama, we present Habbatussauda Ginger Instant Powder Drink. With the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
-        },
-        {
-            name: 'Ginger Original Sachet',
-            img: ginger + '2GOS.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Original Ginger Powder Drink. With the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
-        },
-        {
-            name: 'Ginger Extra Hot Sachet',
-            img: ginger + '3GEHS.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Extra Hot Ginger Powder Drink. With the extra ginger and all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives',
-        },
-        {
-            name: 'Ginger Cinnamon Sachet',
-            img: ginger + '4GCS.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Cinnamon Ginger Powder Drink. We also provide cinnamon and the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
-        },
-        {
-            name: 'Ginger Clove Sachet',
-            img: ginger + '5GCS.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Clove Ginger Powder Drink. We also provide clove and the all natural ingredients of the highest quality, without using artificial sweeteners, food coloring, and preservatives.',
-        },
-        // {
-        //     name: 'Ginger Original with Carton Box',
-        //     img: ginger + '6GOCB.JPG',
-        //     desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Original Ginger With a Carton Box. There are 10 sachets of original ginger, in every box.',
-        // },
-        {
-            name: 'Ginger Extra Hot with Carton Box',
-            img: ginger + '7GEHCB.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Extra Hot Ginger With a Carton Box. There are 10 sachets of extra hot ginger, in every box.',
-        },
-        {
-            name: 'Ginger Cinnamon with Carton Box',
-            img: ginger + '8GCCB.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Cinnamon Ginger With a Carton Box. There are 10 sachets of cinnamon ginger, in every box.',
-        },
-        {
-            name: 'Ginger Clove with Carton Box',
-            img: ginger + '9GCCB.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China, United Harvest Indonesia, Pesona Papatonk Indonesia), we present Clove Ginger With a Carton Box. There are 10 sachets of clove ginger, in every box.',
-        },
-        {
-            name: 'Ginger Original with Standing Pouch',
-            img: ginger + '10GOSP.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China), we present Original Ginger With a Standing Pouch. There are 5 sachets of original ginger, in every pouch.',
-        },
-        {
-            name: 'Ginger Extra Hot with Standing Pouch',
-            img: ginger + '11GEHSP.JPG',
-            desc: 'In collaboration with Papatonk (United Harvest China), we present Extra Hot Ginger With a Standing Pouch. There are 5 sachets of extra hot ginger, in every pouch.',
-        },
-    ]
 
     const toggleChips = () => {
         anime({
@@ -281,7 +128,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className='col-md'>
-                                    <img src='./images/Crackers/6TB.JPG' className='rounded-lg shadow' width='100%' />
+                                    <img src='./images/6TB.JPG' className='rounded-lg shadow' width='100%' />
                                 </div>
                             </div>
                         </div>
@@ -312,7 +159,7 @@ const Products = () => {
                         <div className='p-5'>
                             <div className='row'>
                                 <div className='col-md'>
-                                    <img src='./images/Ginger/2GOS.JPG' className='rounded-lg shadow' width='100%' />
+                                    <img src='./images/2GOS.JPG' className='rounded-lg shadow' width='100%' />
                                 </div>
                                 <div className='col-md-5 d-flex'>
                                     <div className='m-auto d-flex flex-column'>
@@ -359,7 +206,7 @@ const Products = () => {
                         <div className='p-5'>
                             <div className='row'>
                                 <div className='col-md'>
-                                    <img src='./images/Chips/8CCHS.JPG' className='rounded-lg shadow' width='100%' />
+                                    <img src='./images/8CCHS.JPG' className='rounded-lg shadow' width='100%' />
                                 </div>
                                 <div className='col-md-5 d-flex'>
                                     <div className='m-auto d-flex flex-column'>

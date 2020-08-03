@@ -140,11 +140,19 @@
     background: #343A40;
 }
 
+.custom-arrow:hover {
+    background: #343A40;
+}
+
+.custom-arrow-prev:hover {
+    background: #343A40;
+}
+
 .custom-arrow-prev {
     margin-left: 30%;
     background: #343A40;
     border-radius: 50%;
-    z-index: 20p;
+    z-index: 20;
     display: block;
 }
 
