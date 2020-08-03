@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+
+media_folder: 'static/'
+public_folder: '/img'
+
+editor:
+  preview: false
+
+collections:
+  - name: 'products'
+    label: 'Products'
+    media_folder: 'images/'
+    create: true
+    folder: 'static/product'
+    slug: '{{slug}}'
+    summary: "{{fields.name}} - {{fields.category}}"
+    view_filters:
+      - label: 'Cracker'
+        field: 'category'
+        pattern: 'cracker'
+      - label: 'Ginger'
+        field: 'category'
+        pattern: 'ginger'
+      - label: 'Chips'
+        field: 'category'
+        pattern: 'chips'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Category', name: 'category', widget: 'select', options: [ 'cracker', 'ginger', 'chips' ] }
+  - name: 'legal'
+    label: 'Legal'
+    media_folder: 'images/'
+    public_folder: ''
+    files:
+      - label: 'content'
+        name: 'Content'
+        file: 'static/legal/content.md'
+        fields: 
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -25,7 +25,7 @@ const ReactParallax = (props) => {
     }, [])
     return (
         <div>
-            <Parallax bgImage='./images/Crackers/3TS.JPG' blur={{ min: -15, max: 15 }} strength={500} className='parallax-header'>
+            <Parallax bgImage='./images/3TS.JPG' blur={{ min: -15, max: 15 }} strength={500} className='parallax-header'>
                 <div id='parallax-height'>
                     <div id='parallax-header' style={insideStyles} className='text-white text-center'>
                         <div className='container'>
@@ -33,7 +33,7 @@ const ReactParallax = (props) => {
                                 "We share the cultural value of Indonesia to the world through the native product."
                             </h1>
                             <div className='d-flex justify-content-center'>
-                                <div class="hscroll-line" style={{ top: '500px' }}></div>
+                                <div className="hscroll-line" style={{ top: '500px' }}></div>
                             </div>
                         </div>
                     </div>
