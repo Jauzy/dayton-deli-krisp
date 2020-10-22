@@ -5,7 +5,7 @@ title: Our Legal Certificates
 
 #### This Certificate is valid and met the sanitation and hygiene requirement in case of food safety violation.
 
-![CERTIFICATE OF "GOOD MANUFACTURING PRACTICES" ](/images/img_6220.jpg "CERTIFICATE OF \\\\"GOOD MANUFACTURING PRACTICES\\\\" ")
+![CERTIFICATE OF "GOOD MANUFACTURING PRACTICES" ](skp-20-22.jpeg "CERTIFICATE OF \\\\\"GOOD MANUFACTURING PRACTICES\\\\\" ")
 
 ### HACCP - FQIAMINISTRY OF MARINE AFFAIRS AND FISHERIES REPUBLIC OF INDONESIA
 
@@ -45,6 +45,6 @@ title: Our Legal Certificates
 
 ![Sertificate Traceability 2019-2021](/images/sertifikat-tracebility-2019-2021.jpg "Sertificate Traceability 2019-2021")
 
-### PRODUCT CERTIFICATE BY INDONESIAN NATIONAL STANDARD AGENCY 
+### PRODUCT CERTIFICATE BY INDONESIAN NATIONAL STANDARD AGENCY
 
 ![SNI PT DYTONA DELI KRISP](/images/sni-pt-dytona-deli-krisp.jpeg "SNI PT DYTONA DELI KRISP")
