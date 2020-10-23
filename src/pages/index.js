@@ -6,7 +6,8 @@ import {
   Quotes, 
   Products, 
   Footer, 
-  VisionMission 
+  VisionMission,
+  SubFooter,
 } from '../Components/Index'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Products />
       <Quotes />
       <VisionMission />
+      <SubFooter />
       <Footer />
     </div>
   )

@@ -106,3 +106,5 @@ dist
 .vercel
 
 public/
+
+.env.development

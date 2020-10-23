@@ -84,10 +84,10 @@ const Navbar = () => {
                     <div className="collapse" id="navbarSupportedContent" style={{ width: '100%' }}>
                         <ul className="navbar-nav">
                             <li className="nav-item d-flex align-items-center text-white">
-                                <i className='fa fa-boxes mr-2' /><a className="nav-link" href="#products">Our Products</a>
+                                <a className="nav-link" href="#products">Our Products</a>
                             </li>
                             <li className="nav-item d-flex align-items-center text-white">
-                                <i className='fa fa-building mr-2' /><a className="nav-link" href="#vision-mission">Mission & Vision</a>
+                                <a className="nav-link" href="#vision-mission">Mission & Vision</a>
                             </li>
                             <li className="nav-item ">
                                 <a className="nav-link" href="#chipsSection">Products: Chips</a>
