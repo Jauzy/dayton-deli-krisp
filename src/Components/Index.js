@@ -5,6 +5,7 @@ import Quotes from './Quotes'
 import Products from './Products'
 import Footer from './Footer'
 import VisionMission from './VisionMission'
+import SubFooter from './SubFooter'
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Quotes,
     Products,
     Footer,
-    VisionMission
+    VisionMission,
+    SubFooter
 }

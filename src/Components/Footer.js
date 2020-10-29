@@ -25,7 +25,7 @@ const Footer = (props) => {
                                     <i className='fa fa-phone' /> (+62) 251 8618 620
                                 </a>
                                 <a className='mt-auto btn btn-light my-2' href='https://api.whatsapp.com/send?phone=6281283275271'>
-                                    <i className='fab fa-whatsapp' /> 0812 83275271
+                                    <i className='fa fa-whatsapp' /> 0812 83275271
                                 </a>
                             </div>
                             <div className="col-md d-flex flex-column">
@@ -35,8 +35,8 @@ const Footer = (props) => {
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#crackersSection'>Kroepoek</a></li>
                                     <li className="nav-item"><a className="text-decoration-none text-white" href='#gingerSection'>Ginger Powder Drink</a></li>
                                 </ul>
-                                <a className='mt-auto btn btn-light my-2 text-wrap' href='mailto:dytonadelikrisp@ yahoo.co.id'>
-                                    <i className='fa fa-envelope' /> dytonadelikrisp@ yahoo.co.id
+                                <a className='mt-auto btn btn-light my-2 text-wrap' href='mailto:dytonadelikrisp@gmail.com'>
+                                    <i className='fa fa-envelope' /> dytonadelikrisp@gmail.com
                                 </a>
                             </div>
                         </div>
